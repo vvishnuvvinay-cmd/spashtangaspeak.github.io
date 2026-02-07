@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Linkedin, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -28,9 +29,9 @@ const Footer = () => {
               <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 Contact
               </a>
-              <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <Link to="/privacy" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 Privacy
-              </a>
+              </Link>
               <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 Terms
               </a>
