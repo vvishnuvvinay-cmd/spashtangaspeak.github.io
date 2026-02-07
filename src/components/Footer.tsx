@@ -16,8 +16,11 @@ const Footer = () => {
             {/* Brand */}
             <div className="text-center md:text-left">
               <h3 className="text-2xl font-display font-bold mb-2">Spashtanga</h3>
-              <p className="text-primary-foreground/70 text-sm">
+              <p className="text-primary-foreground/70 text-sm mb-2">
                 Confidence starts with your voice.
+              </p>
+              <p className="text-primary-foreground/70 text-sm">
+                +91 8143170833 | Vishnuvinay.vv@gmail.com
               </p>
             </div>
 
