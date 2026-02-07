@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import logo from '@/assets/logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,13 +33,16 @@ const Navbar = () => {
       <nav className="container-tight mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo with tagline */}
-          <a href="#" className="flex flex-col">
-            <span className="text-2xl font-display font-bold gradient-text leading-tight">
-              Spashtanga
-            </span>
-            <span className="hidden sm:block text-xs text-muted-foreground italic">
-              speak better, feel better
-            </span>
+          <a href="#" className="flex items-center gap-3">
+            <img src={logo} alt="Spashtanga Logo" className="w-9 h-9 rounded-lg" />
+            <div className="flex flex-col">
+              <span className="text-xl font-display font-bold gradient-text leading-tight">
+                Spashtanga
+              </span>
+              <span className="hidden sm:block text-xs text-muted-foreground italic">
+                speak better, feel better
+              </span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}

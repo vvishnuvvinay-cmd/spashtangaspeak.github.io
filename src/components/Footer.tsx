@@ -23,8 +23,25 @@ const Footer = () => {
               <p className="text-primary-foreground/70 text-sm">
                 Confidence starts with your voice.
               </p>
+            </div>
+
+            {/* Center - Links */}
+            <div className="flex justify-center gap-6 text-sm">
+              <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                About
+              </a>
+              <Link to="/privacy" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                Privacy
+              </Link>
+              <Link to="/terms" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                Terms
+              </Link>
+            </div>
+
+            {/* Right - Social & Contact */}
+            <div className="text-center md:text-right">
               {/* Social */}
-              <div className="flex gap-4 mt-4 justify-center md:justify-start">
+              <div className="flex gap-4 justify-center md:justify-end mb-4">
                 <a
                   href="#"
                   className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
@@ -40,24 +57,8 @@ const Footer = () => {
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>
-            </div>
-
-            {/* Center - Links */}
-            <div className="flex flex-col items-center gap-3 text-sm">
-              <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                About
-              </a>
-              <Link to="/privacy" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                Privacy
-              </Link>
-              <Link to="/terms" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                Terms
-              </Link>
-            </div>
-
-            {/* Right - Contact Us */}
-            <div className="text-center md:text-right">
-              <h4 className="text-sm font-semibold mb-3">Contact Us</h4>
+              {/* Contact */}
+              <h4 className="text-sm font-semibold mb-2">Contact Us</h4>
               <p className="text-sm text-primary-foreground/70">+91 8143170833</p>
               <p className="text-sm text-primary-foreground/70">Vishnuvinay.vv@gmail.com</p>
             </div>
