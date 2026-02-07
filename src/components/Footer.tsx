@@ -32,9 +32,9 @@ const Footer = () => {
               <Link to="/privacy" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 Privacy
               </Link>
-              <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <Link to="/terms" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 Terms
-              </a>
+              </Link>
             </div>
 
             {/* Social */}
