@@ -35,9 +35,10 @@ const Footer = () => {
             </div>
 
             {/* Contact */}
-            <div className="text-center md:text-right text-sm text-primary-foreground/70">
-              <p>+91 8143170833</p>
-              <p>Vishnuvinay.vv@gmail.com</p>
+            <div className="text-center md:text-right">
+              <h4 className="text-sm font-semibold mb-2">Contact Us</h4>
+              <p className="text-sm text-primary-foreground/70">+91 8143170833</p>
+              <p className="text-sm text-primary-foreground/70">Vishnuvinay.vv@gmail.com</p>
             </div>
 
             {/* Social */}
