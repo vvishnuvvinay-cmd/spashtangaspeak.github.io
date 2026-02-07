@@ -1,31 +1,8 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { useToast } from '@/hooks/use-toast';
 
 const CTASection = () => {
-  const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-
-    setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "You're on the list! 🎉",
-      description: "We'll notify you when early access opens.",
-    });
-    
-    setEmail('');
-    setIsSubmitting(false);
-  };
 
   return (
     <section className="section-padding relative overflow-hidden">
@@ -55,33 +32,13 @@ const CTASection = () => {
             Join hundreds of Indian students and professionals already improving their spoken English. Get early access and start your journey today.
           </p>
 
-          {/* Email Form */}
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="h-12 px-4 text-base"
-              required
-            />
-            <Button
-              type="submit"
-              variant="hero"
-              size="lg"
-              className="h-12 whitespace-nowrap"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? (
-                'Joining...'
-              ) : (
-                <>
-                  Get Early Access
-                  <ArrowRight className="w-4 h-4" />
-                </>
-              )}
+          {/* CTA Button */}
+          <a href="https://spashtanga-250087027666.us-west1.run.app/" target="_blank" rel="noopener noreferrer">
+            <Button variant="hero" size="lg" className="h-12">
+              Get Early Access
+              <ArrowRight className="w-4 h-4" />
             </Button>
-          </form>
+          </a>
 
           <p className="text-sm text-muted-foreground mt-4">
             Free to start. No credit card required.

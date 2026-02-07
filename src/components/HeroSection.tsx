@@ -33,6 +33,11 @@ const HeroSection = () => {
               Now in Early Access
             </motion.div>
 
+            <div className="mb-2">
+              <span className="text-2xl sm:text-3xl font-display font-bold">Spashtanga</span>
+              <span className="text-sm sm:text-base text-muted-foreground ml-2 italic">speak better, feel better</span>
+            </div>
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6">
               Speak Clearly.{' '}
               <span className="gradient-text">Get Confident.</span>{' '}
@@ -45,10 +50,12 @@ const HeroSection = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button variant="hero" size="xl" className="group">
-                Join Early Access
-                <ArrowRight className="transition-transform group-hover:translate-x-1" />
-              </Button>
+              <a href="https://spashtanga-250087027666.us-west1.run.app/" target="_blank" rel="noopener noreferrer">
+                <Button variant="hero" size="xl" className="group">
+                  Join Early Access
+                  <ArrowRight className="transition-transform group-hover:translate-x-1" />
+                </Button>
+              </a>
               <Button variant="heroOutline" size="xl" className="group">
                 <Play size={18} className="mr-1" />
                 See How It Works
