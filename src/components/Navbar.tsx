@@ -31,10 +31,13 @@ const Navbar = () => {
     >
       <nav className="container-tight mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
+          {/* Logo with tagline */}
           <a href="#" className="flex items-center space-x-2">
             <span className="text-2xl font-display font-bold gradient-text">
               Spashtanga
+            </span>
+            <span className="hidden sm:inline text-sm text-muted-foreground italic">
+              speak better, feel better
             </span>
           </a>
 
@@ -53,9 +56,11 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="hero" size="lg">
-              Get Early Access
-            </Button>
+            <a href="https://spashtanga-250087027666.us-west1.run.app/" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="lg">
+                Get Early Access
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -85,9 +90,11 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="lg" className="w-full">
-                Get Early Access
-              </Button>
+              <a href="https://spashtanga-250087027666.us-west1.run.app/" target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button variant="hero" size="lg" className="w-full">
+                  Get Early Access
+                </Button>
+              </a>
             </div>
           </motion.div>
         )}
