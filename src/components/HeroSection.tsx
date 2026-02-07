@@ -33,11 +33,6 @@ const HeroSection = () => {
               Now in Early Access
             </motion.div>
 
-            <div className="mb-2">
-              <span className="text-2xl sm:text-3xl font-display font-bold">Spashtanga</span>
-              <span className="text-sm sm:text-base text-muted-foreground ml-2 italic">speak better, feel better</span>
-            </div>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6">
               Speak Clearly.{' '}
               <span className="gradient-text">Get Confident.</span>{' '}

@@ -16,11 +16,8 @@ const Footer = () => {
             {/* Brand */}
             <div className="text-center md:text-left">
               <h3 className="text-2xl font-display font-bold mb-2">Spashtanga</h3>
-              <p className="text-primary-foreground/70 text-sm mb-2">
-                Confidence starts with your voice.
-              </p>
               <p className="text-primary-foreground/70 text-sm">
-                +91 8143170833 | Vishnuvinay.vv@gmail.com
+                Confidence starts with your voice.
               </p>
             </div>
 
@@ -29,15 +26,18 @@ const Footer = () => {
               <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 About
               </a>
-              <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                Contact
-              </a>
               <Link to="/privacy" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 Privacy
               </Link>
               <Link to="/terms" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 Terms
               </Link>
+            </div>
+
+            {/* Contact */}
+            <div className="text-center md:text-right text-sm text-primary-foreground/70">
+              <p>+91 8143170833</p>
+              <p>Vishnuvinay.vv@gmail.com</p>
             </div>
 
             {/* Social */}
