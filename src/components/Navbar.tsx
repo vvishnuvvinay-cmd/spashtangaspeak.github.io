@@ -32,11 +32,11 @@ const Navbar = () => {
       <nav className="container-tight mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo with tagline */}
-          <a href="#" className="flex items-center space-x-2">
-            <span className="text-2xl font-display font-bold gradient-text">
+          <a href="#" className="flex flex-col">
+            <span className="text-2xl font-display font-bold gradient-text leading-tight">
               Spashtanga
             </span>
-            <span className="hidden sm:inline text-sm text-muted-foreground italic">
+            <span className="hidden sm:block text-xs text-muted-foreground italic">
               speak better, feel better
             </span>
           </a>
