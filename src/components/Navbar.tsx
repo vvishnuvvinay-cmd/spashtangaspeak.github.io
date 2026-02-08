@@ -61,8 +61,9 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a href="https://spashtanga-250087027666.us-west1.run.app/" target="_blank" rel="noopener noreferrer">
-              <Button variant="hero" size="lg">
-                Get Early Access
+              <Button variant="hero" size="lg" className="h-auto py-2 flex-col gap-0">
+                <span>Get Early Access</span>
+                <span className="text-[10px] font-normal opacity-80">PWA version</span>
               </Button>
             </a>
           </div>
@@ -95,8 +96,9 @@ const Navbar = () => {
                 </a>
               ))}
               <a href="https://spashtanga-250087027666.us-west1.run.app/" target="_blank" rel="noopener noreferrer" className="w-full">
-                <Button variant="hero" size="lg" className="w-full">
-                  Get Early Access
+                <Button variant="hero" size="lg" className="w-full h-auto py-2 flex-col gap-0">
+                  <span>Get Early Access</span>
+                  <span className="text-[10px] font-normal opacity-80">PWA version</span>
                 </Button>
               </a>
             </div>

@@ -59,8 +59,21 @@ const Footer = () => {
               </div>
               {/* Contact */}
               <h4 className="text-sm font-semibold mb-2">Contact Us</h4>
-              <p className="text-sm text-primary-foreground/70">+91 8143170833</p>
-              <p className="text-sm text-primary-foreground/70">Vishnuvinay.vv@gmail.com</p>
+              <a 
+                href="tel:+918143170833" 
+                className="block text-sm text-primary-foreground/75 hover:text-primary-foreground transition-colors"
+              >
+                +91 8143170833
+              </a>
+              <a 
+                href="mailto:Vishnuvinay.vv@gmail.com" 
+                className="block text-sm text-primary-foreground/75 hover:text-primary-foreground transition-colors"
+              >
+                Vishnuvinay.vv@gmail.com
+              </a>
+              <p className="text-sm text-primary-foreground/60 mt-2">
+                Visakhapatnam, India
+              </p>
             </div>
           </div>
 
