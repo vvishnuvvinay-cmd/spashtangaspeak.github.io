@@ -34,9 +34,12 @@ const CTASection = () => {
 
           {/* CTA Button */}
           <a href="https://spashtanga-250087027666.us-west1.run.app/" target="_blank" rel="noopener noreferrer">
-            <Button variant="hero" size="lg" className="h-12">
-              Get Early Access
-              <ArrowRight className="w-4 h-4" />
+            <Button variant="hero" size="lg" className="h-auto py-3 flex-col gap-0">
+              <span className="flex items-center gap-2">
+                Get Early Access
+                <ArrowRight className="w-4 h-4" />
+              </span>
+              <span className="text-xs font-normal opacity-80">Try our PWA version</span>
             </Button>
           </a>
 
