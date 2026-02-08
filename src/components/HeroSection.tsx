@@ -46,12 +46,9 @@ const HeroSection = () => {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a href="https://spashtanga-250087027666.us-west1.run.app/" target="_blank" rel="noopener noreferrer">
-                <Button variant="hero" size="xl" className="group flex-col gap-0 h-auto py-3">
-                  <span className="flex items-center gap-2">
-                    Join Early Access
-                    <ArrowRight className="transition-transform group-hover:translate-x-1" />
-                  </span>
-                  <span className="text-xs font-normal opacity-80">Try our PWA version</span>
+                <Button variant="hero" size="xl" className="group">
+                  Join Early Access
+                  <ArrowRight className="transition-transform group-hover:translate-x-1" />
                 </Button>
               </a>
               <Button variant="heroOutline" size="xl" className="group">
